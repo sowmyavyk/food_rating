@@ -1,0 +1,133 @@
+# Language Detector model for Apache OpenNLP #
+
+The model were trained with the Leipzig corpus, which can be found here: http://wortschatz.uni-leipzig.de/en/download/
+The model can detect 103 languages in ISO 693-3 standard. The languages are:
+
+```
+afr	Afrikaans
+ara	Arabic
+ast	Asturian
+aze	Azerbaijani
+bak	Bashkir
+bel	Belarusian
+ben	Bengali
+bos	Bosnian
+bre	Breton
+bul	Bulgarian
+cat	Catalan
+ceb	Cebuano
+ces	Czech
+che	Chechen
+cmn	Mandarin Chinese
+cym	Welsh
+dan	Danish
+deu	German
+ekk	Standard Estonian
+ell	Greek, Modern
+eng	English
+epo	Esperanto
+est	Estonian
+eus	Basque
+fao	Faroese
+fas	Persian
+fin	Finnish
+fra	French
+fry	Western Frisian
+gle	Irish
+glg	Galician
+gsw	Swiss German
+guj	Gujarati
+heb	Hebrew
+hin	Hindi
+hrv	Croatian
+hun	Hungarian
+hye	Armenian
+ind	Indonesian
+isl	Icelandic
+ita	Italian
+jav	Javanese
+jpn	Japanese
+kan	Kannada
+kat	Georgian
+kaz	Kazakh
+kir	Kirghiz
+kor	Korean
+lat	Latin
+lav	Latvian
+lim	Limburgan
+lit	Lithuanian
+ltz	Luxembourgish
+lvs	Standard Latvian
+mal	Malayalam
+mar	Marathi
+min	Minangkabau
+mkd	Macedonian
+mlt	Maltese
+mon	Mongolian
+mri	Maori
+msa	Malay
+nan	Min Nan Chinese
+nds	Low German
+nep	Nepali
+nld	Dutch
+nno	Norwegian Nynorsk
+nob	Norwegian BokmÃ¥l
+oci	Occitan
+pan	Panjabi
+pes	Iranian Persian
+plt	Plateau Malagasy
+pnb	Western Panjabi
+pol	Polish
+por	Portuguese
+pus	Pushto
+ron	Romanian
+rus	Russian
+san	Sanskrit
+sin	Sinhala
+slk	Slovak
+slv	Slovenian
+som	Somali
+spa	Spanish
+sqi	Albanian
+srp	Serbian
+sun	Sundanese
+swa	Swahili
+swe	Swedish
+tam	Tamil
+tat	Tatar
+tel	Telugu
+tgk	Tajik
+tgl	Tagalog
+tha	Thai
+tur	Turkish
+ukr	Ukrainian
+urd	Urdu
+uzb	Uzbek
+vie	Vietnamese
+vol	VolapÃ¼k
+war	Waray
+zul	Zulu
+```
+
+There are more than 103 languages, it was decided to not to include all available languages from the Leipzig corpus into the model. If an important language is missing please contact us on the Apache OpenNLP dev mailing list (dev@opennlp.apache.org).
+
+## Reproducing the work
+
+### Preparing the data
+
+* Checkout Leipzig corpus
+
+```
+svn co https://svn.apache.org/repos/bigdata/opennlp/trunk opennlp-corpus
+```
+
+### Training and evaluation
+
+Execute 
+```
+export OPENNLP_HOME=<path to Apache OpenNLP installation>
+cd opennlp-corpus/leipzig
+sh create_langdetect_model.sh <model name>
+```
+
+The training result will be at `target` folder.
