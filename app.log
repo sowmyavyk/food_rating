@@ -1,0 +1,46 @@
+2025-02-02T23:34:56.311+05:30  INFO 79000 --- [foodRating] [restartedMain] c.e.foodRating.FoodRatingApplication     : Starting FoodRatingApplication using Java 17.0.13 with PID 79000 (/Users/vyakaranamsowmya/food_rating/target/classes started by vyakaranamsowmya in /Users/vyakaranamsowmya/food_rating)
+2025-02-02T23:34:56.312+05:30 DEBUG 79000 --- [foodRating] [restartedMain] c.e.foodRating.FoodRatingApplication     : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-02T23:34:56.312+05:30  INFO 79000 --- [foodRating] [restartedMain] c.e.foodRating.FoodRatingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-02-02T23:34:56.372+05:30  INFO 79000 --- [foodRating] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-02T23:34:56.375+05:30  INFO 79000 --- [foodRating] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2025-02-02T23:34:56.418+05:30  INFO 79000 --- [foodRating] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-02T23:34:56.419+05:30  INFO 79000 --- [foodRating] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-02T23:34:56.419+05:30  INFO 79000 --- [foodRating] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-02T23:34:56.423+05:30  INFO 79000 --- [foodRating] [restartedMain] o.a.c.c.C.[Tomcat-7].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-02-02T23:34:56.423+05:30  INFO 79000 --- [foodRating] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 110 ms
+2025-02-02T23:34:56.440+05:30  INFO 79000 --- [foodRating] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-02T23:34:56.441+05:30  INFO 79000 --- [foodRating] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-02T23:34:56.445+05:30  INFO 79000 --- [foodRating] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-02T23:34:56.445+05:30  INFO 79000 --- [foodRating] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Starting...
+2025-02-02T23:34:56.458+05:30  INFO 79000 --- [foodRating] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-25 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d94c9fb
+2025-02-02T23:34:56.459+05:30  INFO 79000 --- [foodRating] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Start completed.
+2025-02-02T23:34:56.460+05:30  WARN 79000 --- [foodRating] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-02T23:34:56.460+05:30  INFO 79000 --- [foodRating] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-25)']
+	Database driver: undefined/unknown
+	Database version: 9.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-02T23:34:56.476+05:30  INFO 79000 --- [foodRating] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-02T23:34:56.490+05:30  INFO 79000 --- [foodRating] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02T23:34:56.523+05:30  WARN 79000 --- [foodRating] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-02T23:34:56.569+05:30  WARN 79000 --- [foodRating] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-02-02T23:34:56.573+05:30  INFO 79000 --- [foodRating] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-02T23:34:56.575+05:30  INFO 79000 --- [foodRating] [restartedMain] c.e.foodRating.FoodRatingApplication     : Started FoodRatingApplication in 0.301 seconds (process running for 1988.491)
+2025-02-02T23:34:56.576+05:30  INFO 79000 --- [foodRating] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-02T23:36:40.750+05:30  INFO 79000 --- [foodRating] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-7].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-02T23:36:40.750+05:30  INFO 79000 --- [foodRating] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-02T23:36:40.753+05:30  INFO 79000 --- [foodRating] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-02-02T23:36:40.757+05:30  INFO 79000 --- [foodRating] [http-nio-8080-exec-2] c.e.f.c.ExcelDownloadController          : Request received to download meal summary Excel.
+2025-02-02T23:36:40.757+05:30  INFO 79000 --- [foodRating] [http-nio-8080-exec-2] c.e.foodRating.service.ExcelService      : Starting meal summary Excel generation...
+2025-02-02T23:36:40.772+05:30 DEBUG 79000 --- [foodRating] [http-nio-8080-exec-2] org.hibernate.SQL                        : select ms1_0.id,ms1_0.average_rating,ms1_0.date,ms1_0.meal_type,ms1_0.summarized_feedback,ms1_0.total_students_rated from meal_summary ms1_0
+2025-02-02T23:36:40.785+05:30  INFO 79000 --- [foodRating] [http-nio-8080-exec-2] c.e.foodRating.service.ExcelService      : Fetched 7 meal summaries from the database.
+2025-02-02T23:36:40.818+05:30  INFO 79000 --- [foodRating] [http-nio-8080-exec-2] c.e.foodRating.service.ExcelService      : Meal summary Excel file generated successfully.
+2025-02-02T23:36:54.849+05:30  INFO 79000 --- [foodRating] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-02T23:36:54.852+05:30  INFO 79000 --- [foodRating] [Thread-90] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-02T23:36:54.854+05:30  INFO 79000 --- [foodRating] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-02T23:36:54.856+05:30  INFO 79000 --- [foodRating] [Thread-90] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02T23:36:54.856+05:30  INFO 79000 --- [foodRating] [Thread-90] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown initiated...
+2025-02-02T23:36:54.862+05:30  INFO 79000 --- [foodRating] [Thread-90] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown completed.
