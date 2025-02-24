@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-
 import java.time.LocalDate;
 import java.util.List;
 
@@ -51,7 +50,14 @@ public class RatingService {
 
         mealSummaryRepository.save(summary);
     }
-
+    public boolean hasRated(String rollNumber, LocalDate date, String mealType) {
+        List<StudentRating> ratings = studentRatingRepository.findByRollNumberAndDateAndMealType(
+            rollNumber, 
+            date, 
+            mealType
+        );
+        return !ratings.isEmpty();
+    }
     private String summarizeFeedback(List<StudentRating> ratings) {
         // Combine all feedback into a single string
         String allFeedback = ratings.stream()
